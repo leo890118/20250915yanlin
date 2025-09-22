@@ -10,7 +10,6 @@ def main():
     sum_result = add(x, y)
     print(f"{x} + {y} = {sum_result}")
 
-main()
 if __name__ == "__main__":
     print("這是python直接執行")
 else:
