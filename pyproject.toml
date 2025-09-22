@@ -1,7 +1,7 @@
 [project]
 name = "20250915yanlin"
 version = "0.1.0"
-description = "Add your description here"
+description = "職能發展學院py機器學習上課用"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
