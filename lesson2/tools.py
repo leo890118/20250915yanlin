@@ -27,3 +27,10 @@ def get_area(data)->list:
     for item in data:
         areas.add(item['sarea'])
     return list(areas)
+
+def get_sites_of_area(data,area)->list:
+    sites = []
+    for item in data:
+        if item['sarea'] == area:
+            sites.append(item)
+    return sites
