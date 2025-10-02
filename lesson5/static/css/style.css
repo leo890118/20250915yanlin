@@ -1,0 +1,148 @@
+/* lesson5 static CSS extracted from templates/index.html */
+
+/* 重置樣式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 基本樣式 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* 導覽列樣式 */
+.navbar {
+    background-color: #0B346E;
+    padding: 1.5rem 2.0rem;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* 品牌左、按鈕右 */
+    gap: 1rem;
+}
+
+.navbar-brand {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.navbar .navbar-brand {
+    font-weight: 700;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-list {
+    display: flex;
+    gap: 0.75rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .nav-item a {
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    color: #ffffff;
+    /* 按鈕文字改為白色 */
+    border-radius: 4px;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+/* active / hover 狀態：使用較深但透明的背景以保留白色文字的可讀性 */
+.navbar .nav-item a.active,
+.navbar .nav-item a:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+    /* 淡暗背景，讓白色文字可見 */
+    color: #ffffff;
+    /* 確保 hover/active 時仍為白色 */
+}
+
+.nav-item a:hover {
+    color: #ddd;
+}
+
+/* 主要內容區樣式 */
+main {
+    padding: 2rem 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-main {
+    flex: 2;
+    padding: 0 15px;
+}
+
+.col-sidebar {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* lead paragraph style (moved from inline) */
+.lead {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+/* 頁尾樣式 */
+footer {
+    background-color: #0B346E;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-main,
+    .col-sidebar {
+        width: 100%;
+    }
+}
+
+/* 小螢幕處理：改為直列並讓按鈕靠右或換行 */
+@media (max-width: 600px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .navbar .nav-list {
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+}
