@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!toggle || !navList) return;
 
     toggle.addEventListener('click', function () {
-        navList.classList.toggle('open');
+        navList.classList.toggle('open'); // Consider add/remove for clarity
     });
 
     // 在視窗尺寸改變到桌機時，自動關閉手機選單以避免遺留狀態

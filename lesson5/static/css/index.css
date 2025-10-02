@@ -169,6 +169,7 @@ footer {
 
     .nav-toggle {
         display: flex;
+        /* Ensure it's flex to center the icon */
         position: absolute;
         top: 50%;
         right: 1rem;
