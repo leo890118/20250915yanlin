@@ -1,4 +1,5 @@
-{
+{   
+    "chromeExecutablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
     "servers": {
         "chrome-devtools": {
             "command": "npx",
