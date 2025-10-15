@@ -1,9 +1,11 @@
 {% extends "base.html" %}
+
 {% block head %}
 {{ super() }}
 <title>決策數分類</title>
 <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/decision_tree.css') }}" />
 {% endblock %}
+
 {% block content %}
 <div class="container mt-5">
     <div>
