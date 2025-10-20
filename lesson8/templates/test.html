@@ -1,28 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>範例</title>
+    <title>範例1</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const titleElement = document.querySelector('#title');
+            const buttonElement = document.querySelector('#myButton');
+
+            buttonElement.addEventListener('click', function () {
+                titleElement.textContent = "標題被我改變了";
+            })
+        })
+    </script>
 </head>
 
 <body>
+
     <h1 id="title">這是標題</h1>
     <button id="myButton">點我改變標題</button>
-    <script>
-        // 等待 DOM 完全載入後再執行
-        console.error("window是全域物件");
-        const button = document.getElementById('myButton');
-        const title = document.getElementById('title');
 
-        // 點擊按鈕時改變標題文字
-        button.addEventListener('click', () => {
-            title.textContent = '標題已被改變！';
-        });
-
-    </script>
-    </script>
 </body>
 
 </html>
