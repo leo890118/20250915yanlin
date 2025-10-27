@@ -1,4 +1,3 @@
 {
-    "copilot.chat.instructions": "這是一個 Flask的專案學習範例,每一個資料夾內都會有一個Flask的專案.使用的是uv的虛擬環境,請在終端機輸入'source .venv/Scripts/activate'來啟動虛擬環境.",
-    "editor.bracketPairColorization.independentColorPoolPerBracketType": false
+    "github.copilot.chat.codeGeneration.useInstructionFiles": true
 }
